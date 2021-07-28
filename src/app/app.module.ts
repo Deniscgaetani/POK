@@ -3,11 +3,11 @@ import { BrowserModule } from "@angular/platform-browser";
 import { AppComponent } from "./app.component";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { TodoComponent } from "./todo/todo.component";
-import { RouterModule } from "@angular/router";
+import { AppRoutingModule } from "./app-routing.module";
 
 @NgModule({
   declarations: [AppComponent, TodoComponent],
-  imports: [BrowserModule, NgbModule, RouterModule],
+  imports: [BrowserModule, NgbModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
