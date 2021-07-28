@@ -4,11 +4,13 @@ import { AppComponent } from "./app.component";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { TodoComponent } from "./todo/todo.component";
 import { AppRoutingModule } from "./app-routing.module";
+import { TodoService } from "../services/todo.service";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [AppComponent, TodoComponent],
-  imports: [BrowserModule, NgbModule, AppRoutingModule],
-  providers: [],
+  imports: [BrowserModule, NgbModule, AppRoutingModule, HttpClientModule],
+  providers: [TodoService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

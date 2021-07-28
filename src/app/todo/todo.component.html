@@ -1,1 +1,11 @@
-<p>todo works!</p>
+<div class="container">
+  <div class="input-group mb-3 mt-3">
+    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"  *ngFor="let todo of (todo$|async)">{{todo.name}}</li>
+  </ul>
+</div>
+
+https://cr-ss-service.azurewebsites.net/api/ScreenShot?widget=summary&username=deniscgaetani&badges=2&show-avatar=false&style=--header-bg-color:%23000;--border-radius:10px
